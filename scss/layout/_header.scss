@@ -7,6 +7,7 @@
         max-width: 1200px;
         margin: auto;
         padding-inline:10px ;
+
         
 
         &__nav{
@@ -35,6 +36,11 @@
             align-items: center;
             gap: 1rem;
             padding: 20px 0;
+
+            &__logo{
+                width: clamp(6.25rem, 2.3438rem + 12.5vw, 9.375rem);
+            }
+            
 
             
 
@@ -82,7 +88,7 @@
             }
 
             &__user{
-                font-size: 2rem;
+                font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);
                 color: #fff;
                 display: flex;
                 gap: 1rem;
@@ -106,7 +112,7 @@
                 padding: 10px 0;
                 &__search{
                     position: absolute;
-                    top: 90px;
+                    bottom: -80px;
 
                     &__suggestion{
                         ul{

@@ -66,6 +66,9 @@ body {
   gap: 1rem;
   padding: 20px 0;
 }
+.header__wrapper__main__logo {
+  width: clamp(6.25rem, 2.3438rem + 12.5vw, 9.375rem);
+}
 .header__wrapper__main__search {
   width: min(100%, 900px);
 }
@@ -102,7 +105,7 @@ body {
   color: #fff;
 }
 .header__wrapper__main__user {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);
   color: #fff;
   display: flex;
   gap: 1rem;
@@ -121,7 +124,7 @@ body {
   }
   .header__wrapper__main__search {
     position: absolute;
-    top: 90px;
+    bottom: -80px;
   }
   .header__wrapper__main__search__suggestion ul li a {
     font-size: 0.8rem;
