@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__wrapper__nav">
+                <ul>
+                    <li><a href="#">Seller Center</a></li>
+                    <li><a href="#">Sell on Shopee</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Follow us on</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#"class="cta">Sign up</a></li>
+                    <li><a href="#" class="cta">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__wrapper__main">
+                <div class="header__wrapper__main__logo">
+                    <img src="assets/shopee-logo.svg" alt="">
+                </div>
+                <div class="header__wrapper__main__search">
+                    <div class="header__wrapper__main__search__input">
+                        <input type="text" name="search" placeholder="Sign up and get 100% off on your first order">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M18.319 14.433A8.001 8.001 0 0 0 6.343 3.868a8 8 0 0 0 10.564 11.976l.043.045l4.242 4.243a1 1 0 1 0 1.415-1.415l-4.243-4.242a1.116 1.116 0 0 0-.045-.042Zm-2.076-9.15a6 6 0 1 1-8.485 8.485a6 6 0 0 1 8.485-8.485Z" clip-rule="evenodd"/></svg></button>
+                    </div>
+                    <div class="header__wrapper__main__search__suggestion">
+                        <ul>
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Bag</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Laptop</a></li>
+                            <li><a href="#">Croptop</a></li>
+                            <li><a href="#">Tshirt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__wrapper__main__user">
+                    <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 3h2l.5 3m0 0L7 15h11l3-9H5.5z"/><circle cx="8" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></g></svg>
+
+                    <svg class="profile" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19.2c-2.5 0-4.71-1.28-6-3.2c.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.232 7.232 0 0 1-6 3.2M12 5a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-3A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10c0-5.53-4.5-10-10-10Z"/></svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home__wrapper">
+            <div class="home__wrapper__grid">
+                <div class="home__wrapper__grid__banner mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/banner1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner7.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner8.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner9.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/banner10.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="home__wrapper__grid__banner">
+                    <img src="assets/sub-banner1.png" alt="">
+                </div>
+    
+                <div class="home__wrapper__grid__banner">
+                    <img src="assets/sub-banner2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        autoplay: {
+                delay: 2500,
+        },
+        loop: true
+    });
+</script>
+</html>

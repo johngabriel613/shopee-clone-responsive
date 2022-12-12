@@ -1,0 +1,131 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, #F53D2D 0%, #FE6532 100%);
+
+    &__wrapper{
+        max-width: 1200px;
+        margin: auto;
+        padding-inline:10px ;
+        
+
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+            
+            ul{
+                display: flex;
+                gap: 1rem;
+                li{
+                    a{
+                        font-size: .8rem;
+                        color: #fff;
+                    }
+                }
+
+                .cta{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &__main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding: 20px 0;
+
+            
+
+            &__search{
+                width: min(100%, 900px);
+                &__input{
+                    position: relative;
+
+                    input{
+                        padding: 10px 75px 10px 15px;
+                        border: none;
+                        border-radius: 3px;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                        
+                    }
+
+                    button{
+                        position: absolute;
+                        right:5px;
+                        top: 5px;
+                        display: flex;
+                        width: fit-content;
+                        font-size: 1.2rem;
+                        padding: 8px 20px;
+                        border: none;
+                        border-radius: 3px;
+                        background: #fb5533;
+                        color: #fff;
+                    }
+                }
+
+                &__suggestion{
+                    ul{
+                        display: flex;
+                        gap: 1rem;
+                        
+                        li{
+                            a{
+                                font-size: .8rem;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__user{
+                font-size: 2rem;
+                color: #fff;
+                display: flex;
+                gap: 1rem;
+
+                .profile{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:780px) {
+        &__wrapper{
+            &__nav{
+                position: absolute;
+                display: none;
+            }
+
+            &__main{
+                position: relative;
+                padding: 10px 0;
+                &__search{
+                    position: absolute;
+                    top: 90px;
+
+                    &__suggestion{
+                        ul{
+                            li{
+                                a{
+                                    font-size: .8rem;
+                                    color: #fb5533;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__user{
+                    .profile{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
